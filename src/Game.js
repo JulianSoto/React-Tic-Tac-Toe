@@ -19,12 +19,17 @@ class Game extends Component {
 		super(props);
 		this.state = initialState;
 		this.setGameMode = this.setGameMode.bind(this);
+		this.resetGameState = this.resetGameState.bind(this);
 	}
 
 	setGameMode(mode){
 		this.setState({
 			gameMode: mode
 		});
+	}
+
+	resetGameState(){
+		this.setState(initialState)
 	}
 
 	render() {
@@ -39,6 +44,7 @@ class Game extends Component {
 					scoreboard={this.state.scoreboard}
 					gameMode={this.state.gameMode}
 					gameModeSelectionHandler={this.setGameMode}
+					resetGameState={this.resetGameState}
 				/>
 				{
 					this.state.players ?

@@ -18,7 +18,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button>
+        <button
+          onClick={[Function]}
+        >
           Home
         </button>,
         <button>
@@ -40,6 +42,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Home",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Home",
@@ -88,7 +91,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button>
+          <button
+            onClick={[Function]}
+          >
             Home
           </button>,
           <button>
@@ -110,6 +115,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Home",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Home",

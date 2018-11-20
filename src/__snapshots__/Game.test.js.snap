@@ -24,6 +24,7 @@ ShallowWrapper {
           gameModeSelectionHandler={[Function]}
           isDraw={false}
           players={null}
+          resetGameState={[Function]}
           scoreboard={
             Array [
               0,
@@ -48,6 +49,7 @@ ShallowWrapper {
           "gameModeSelectionHandler": [Function],
           "isDraw": false,
           "players": null,
+          "resetGameState": [Function],
           "scoreboard": Array [
             0,
             0,
@@ -76,6 +78,7 @@ ShallowWrapper {
             gameModeSelectionHandler={[Function]}
             isDraw={false}
             players={null}
+            resetGameState={[Function]}
             scoreboard={
               Array [
                 0,
@@ -100,6 +103,7 @@ ShallowWrapper {
             "gameModeSelectionHandler": [Function],
             "isDraw": false,
             "players": null,
+            "resetGameState": [Function],
             "scoreboard": Array [
               0,
               0,
