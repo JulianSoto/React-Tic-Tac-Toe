@@ -4,6 +4,12 @@ exports[`Board should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Board
+    players={
+      Array [
+        "X",
+        "O",
+      ]
+    }
     squares={
       Array [
         null,
@@ -35,43 +41,34 @@ ShallowWrapper {
         <div>
           <Square
             index={0}
-            value={null}
           />
           <Square
             index={1}
-            value={null}
           />
           <Square
             index={2}
-            value={null}
           />
         </div>,
         <div>
           <Square
             index={3}
-            value={null}
           />
           <Square
             index={4}
-            value={null}
           />
           <Square
             index={5}
-            value={null}
           />
         </div>,
         <div>
           <Square
             index={6}
-            value={null}
           />
           <Square
             index={7}
-            value={null}
           />
           <Square
             index={8}
-            value={null}
           />
         </div>,
       ],
@@ -86,15 +83,12 @@ ShallowWrapper {
           "children": Array [
             <Square
               index={0}
-              value={null}
             />,
             <Square
               index={1}
-              value={null}
             />,
             <Square
               index={2}
-              value={null}
             />,
           ],
         },
@@ -107,7 +101,7 @@ ShallowWrapper {
             "props": Object {
               "index": 0,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -120,7 +114,7 @@ ShallowWrapper {
             "props": Object {
               "index": 1,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -133,7 +127,7 @@ ShallowWrapper {
             "props": Object {
               "index": 2,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -150,15 +144,12 @@ ShallowWrapper {
           "children": Array [
             <Square
               index={3}
-              value={null}
             />,
             <Square
               index={4}
-              value={null}
             />,
             <Square
               index={5}
-              value={null}
             />,
           ],
         },
@@ -171,7 +162,7 @@ ShallowWrapper {
             "props": Object {
               "index": 3,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -184,7 +175,7 @@ ShallowWrapper {
             "props": Object {
               "index": 4,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -197,7 +188,7 @@ ShallowWrapper {
             "props": Object {
               "index": 5,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -214,15 +205,12 @@ ShallowWrapper {
           "children": Array [
             <Square
               index={6}
-              value={null}
             />,
             <Square
               index={7}
-              value={null}
             />,
             <Square
               index={8}
-              value={null}
             />,
           ],
         },
@@ -235,7 +223,7 @@ ShallowWrapper {
             "props": Object {
               "index": 6,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -248,7 +236,7 @@ ShallowWrapper {
             "props": Object {
               "index": 7,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -261,7 +249,7 @@ ShallowWrapper {
             "props": Object {
               "index": 8,
               "onClick": undefined,
-              "value": null,
+              "value": undefined,
             },
             "ref": null,
             "rendered": null,
@@ -283,43 +271,34 @@ ShallowWrapper {
           <div>
             <Square
               index={0}
-              value={null}
             />
             <Square
               index={1}
-              value={null}
             />
             <Square
               index={2}
-              value={null}
             />
           </div>,
           <div>
             <Square
               index={3}
-              value={null}
             />
             <Square
               index={4}
-              value={null}
             />
             <Square
               index={5}
-              value={null}
             />
           </div>,
           <div>
             <Square
               index={6}
-              value={null}
             />
             <Square
               index={7}
-              value={null}
             />
             <Square
               index={8}
-              value={null}
             />
           </div>,
         ],
@@ -334,15 +313,12 @@ ShallowWrapper {
             "children": Array [
               <Square
                 index={0}
-                value={null}
               />,
               <Square
                 index={1}
-                value={null}
               />,
               <Square
                 index={2}
-                value={null}
               />,
             ],
           },
@@ -355,7 +331,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 0,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -368,7 +344,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 1,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -381,7 +357,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 2,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -398,15 +374,12 @@ ShallowWrapper {
             "children": Array [
               <Square
                 index={3}
-                value={null}
               />,
               <Square
                 index={4}
-                value={null}
               />,
               <Square
                 index={5}
-                value={null}
               />,
             ],
           },
@@ -419,7 +392,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 3,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -432,7 +405,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 4,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -445,7 +418,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 5,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -462,15 +435,12 @@ ShallowWrapper {
             "children": Array [
               <Square
                 index={6}
-                value={null}
               />,
               <Square
                 index={7}
-                value={null}
               />,
               <Square
                 index={8}
-                value={null}
               />,
             ],
           },
@@ -483,7 +453,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 6,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -496,7 +466,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 7,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -509,7 +479,7 @@ ShallowWrapper {
               "props": Object {
                 "index": 8,
                 "onClick": undefined,
-                "value": null,
+                "value": undefined,
               },
               "ref": null,
               "rendered": null,

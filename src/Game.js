@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './Game.css';
 import SideTable from './SideTable.js';
-
 import Board from './Board';
+
+import isDraw from './isGameDraw.js';
+import winner from './winner.js';
+import vectorToMatrix from './vectorToMatrix.js';
 
 const initialState = {
 	turn: 0, 		//turn's value represents player's index
@@ -11,7 +14,8 @@ const initialState = {
 	isDraw: false,
 	gameMode: null,
 	squares: Array(9).fill(null),
-	scoreboard: [0, 0]
+	scoreboard: [0, 0],
+	gameover: false
 };
 
 class Game extends Component {
@@ -24,6 +28,7 @@ class Game extends Component {
 		this.selectO = this.selectO.bind(this);
 		this.squareClickHandler = this.squareClickHandler.bind(this);
 		this.turnPlayers = this.turnPlayers.bind(this);
+		this.playAgain = this.playAgain.bind(this);
 	}
 
 	setGameMode(mode){
@@ -45,10 +50,19 @@ class Game extends Component {
 	}
 
 	squareClickHandler(i){
-		if (this.state.squares[i] === null) {
-			const squares = [...this.state.squares];
-			squares[i] = this.state.players[this.state.turn];
-			this.setState({squares: squares});
+		if (this.state.squares[i] === null && !this.state.gameover) {
+			let squares = [...this.state.squares];
+			squares[i] = this.state.turn;
+			this.setState({squares: squares}, () => {
+				let win = winner(vectorToMatrix(this.state.squares));
+				if(win !== null){
+					let scoreboard = [...this.state.scoreboard]; 
+					scoreboard[win] = scoreboard[win]+1;
+					this.setState({winner: win, scoreboard: scoreboard, gameover: true});
+				} else if(isDraw(this.state.squares)){
+					this.setState({isDraw: true, gameover: true});
+				}
+			});
 			this.turnPlayers();
 		}
 	}
@@ -59,6 +73,15 @@ class Game extends Component {
 		} else {
 			this.setState({turn: 0});
 		}
+	}
+
+	playAgain(){
+		this.setState({
+			squares: initialState.squares,
+			winner: initialState.winner,
+			isDraw: initialState.isDraw,
+			gameover: initialState.gameover
+		});
 	}
 
 	render() {
@@ -76,12 +99,14 @@ class Game extends Component {
 					resetGameState={this.resetGameState}
 					selectX={this.selectX}
 					selectO={this.selectO}
+					playAgain={this.playAgain}
 				/>
 				{
 					this.state.players ?
 						<Board 
 							className="board"
 							squares={this.state.squares}
+							players={this.state.players}
 							squareClickHandler={this.squareClickHandler}
 						/>
 					: null
