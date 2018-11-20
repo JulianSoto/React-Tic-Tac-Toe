@@ -22,6 +22,8 @@ class Game extends Component {
 		this.resetGameState = this.resetGameState.bind(this);
 		this.selectX = this.selectX.bind(this);
 		this.selectO = this.selectO.bind(this);
+		this.squareClickHandler = this.squareClickHandler.bind(this);
+		this.turnPlayers = this.turnPlayers.bind(this);
 	}
 
 	setGameMode(mode){
@@ -40,6 +42,23 @@ class Game extends Component {
 
 	selectO(){
 		this.setState({players: ['O', 'X']});
+	}
+
+	squareClickHandler(i){
+		if (this.state.squares[i] === null) {
+			const squares = [...this.state.squares];
+			squares[i] = this.state.players[this.state.turn];
+			this.setState({squares: squares});
+			this.turnPlayers();
+		}
+	}
+
+	turnPlayers(){
+		if (this.state.turn === 0){
+			this.setState({turn: 1});
+		} else {
+			this.setState({turn: 0});
+		}
 	}
 
 	render() {
@@ -63,6 +82,7 @@ class Game extends Component {
 						<Board 
 							className="board"
 							squares={this.state.squares}
+							squareClickHandler={this.squareClickHandler}
 						/>
 					: null
 				}
