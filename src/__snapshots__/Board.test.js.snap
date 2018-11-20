@@ -38,225 +38,154 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
-          <Square
-            index={0}
-          />
-          <Square
-            index={1}
-          />
-          <Square
-            index={2}
-          />
-        </div>,
-        <div>
-          <Square
-            index={3}
-          />
-          <Square
-            index={4}
-          />
-          <Square
-            index={5}
-          />
-        </div>,
-        <div>
-          <Square
-            index={6}
-          />
-          <Square
-            index={7}
-          />
-          <Square
-            index={8}
-          />
-        </div>,
+        <Square
+          index={0}
+        />,
+        <Square
+          index={1}
+        />,
+        <Square
+          index={2}
+        />,
+        <Square
+          index={3}
+        />,
+        <Square
+          index={4}
+        />,
+        <Square
+          index={5}
+        />,
+        <Square
+          index={6}
+        />,
+        <Square
+          index={7}
+        />,
+        <Square
+          index={8}
+        />,
       ],
+      "className": "board",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <Square
-              index={0}
-            />,
-            <Square
-              index={1}
-            />,
-            <Square
-              index={2}
-            />,
-          ],
+          "index": 0,
+          "onClick": undefined,
+          "value": undefined,
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 0,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 1,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 2,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "div",
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <Square
-              index={3}
-            />,
-            <Square
-              index={4}
-            />,
-            <Square
-              index={5}
-            />,
-          ],
+          "index": 1,
+          "onClick": undefined,
+          "value": undefined,
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 3,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 4,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 5,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "div",
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <Square
-              index={6}
-            />,
-            <Square
-              index={7}
-            />,
-            <Square
-              index={8}
-            />,
-          ],
+          "index": 2,
+          "onClick": undefined,
+          "value": undefined,
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 6,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 7,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "index": 8,
-              "onClick": undefined,
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "div",
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "index": 3,
+          "onClick": undefined,
+          "value": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "index": 4,
+          "onClick": undefined,
+          "value": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "index": 5,
+          "onClick": undefined,
+          "value": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "index": 6,
+          "onClick": undefined,
+          "value": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "index": 7,
+          "onClick": undefined,
+          "value": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "index": 8,
+          "onClick": undefined,
+          "value": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -268,225 +197,154 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
-            <Square
-              index={0}
-            />
-            <Square
-              index={1}
-            />
-            <Square
-              index={2}
-            />
-          </div>,
-          <div>
-            <Square
-              index={3}
-            />
-            <Square
-              index={4}
-            />
-            <Square
-              index={5}
-            />
-          </div>,
-          <div>
-            <Square
-              index={6}
-            />
-            <Square
-              index={7}
-            />
-            <Square
-              index={8}
-            />
-          </div>,
+          <Square
+            index={0}
+          />,
+          <Square
+            index={1}
+          />,
+          <Square
+            index={2}
+          />,
+          <Square
+            index={3}
+          />,
+          <Square
+            index={4}
+          />,
+          <Square
+            index={5}
+          />,
+          <Square
+            index={6}
+          />,
+          <Square
+            index={7}
+          />,
+          <Square
+            index={8}
+          />,
         ],
+        "className": "board",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Square
-                index={0}
-              />,
-              <Square
-                index={1}
-              />,
-              <Square
-                index={2}
-              />,
-            ],
+            "index": 0,
+            "onClick": undefined,
+            "value": undefined,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 0,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 1,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 2,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "div",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Square
-                index={3}
-              />,
-              <Square
-                index={4}
-              />,
-              <Square
-                index={5}
-              />,
-            ],
+            "index": 1,
+            "onClick": undefined,
+            "value": undefined,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 3,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 4,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 5,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "div",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Square
-                index={6}
-              />,
-              <Square
-                index={7}
-              />,
-              <Square
-                index={8}
-              />,
-            ],
+            "index": 2,
+            "onClick": undefined,
+            "value": undefined,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 6,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 7,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "index": 8,
-                "onClick": undefined,
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": "div",
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "index": 3,
+            "onClick": undefined,
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "index": 4,
+            "onClick": undefined,
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "index": 5,
+            "onClick": undefined,
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "index": 6,
+            "onClick": undefined,
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "index": 7,
+            "onClick": undefined,
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "index": 8,
+            "onClick": undefined,
+            "value": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

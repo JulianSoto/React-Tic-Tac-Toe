@@ -124,7 +124,18 @@ class Game extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="game-container">
+			
+				{
+					this.state.players ?
+						<Board 
+							className="board"
+							squares={this.state.squares}
+							players={this.state.players}
+							squareClickHandler={this.squareClickHandler}
+						/>
+					: null
+				}
 				<SideTable
 					className="side-table"
 					winner={this.state.winner}
@@ -139,16 +150,6 @@ class Game extends Component {
 					selectO={this.selectO}
 					playAgain={this.playAgain}
 				/>
-				{
-					this.state.players ?
-						<Board 
-							className="board"
-							squares={this.state.squares}
-							players={this.state.players}
-							squareClickHandler={this.squareClickHandler}
-						/>
-					: null
-				}
 			</div>
 		);
 	}
