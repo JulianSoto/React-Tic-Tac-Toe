@@ -20,6 +20,8 @@ class Game extends Component {
 		this.state = initialState;
 		this.setGameMode = this.setGameMode.bind(this);
 		this.resetGameState = this.resetGameState.bind(this);
+		this.selectX = this.selectX.bind(this);
+		this.selectO = this.selectO.bind(this);
 	}
 
 	setGameMode(mode){
@@ -30,6 +32,14 @@ class Game extends Component {
 
 	resetGameState(){
 		this.setState(initialState)
+	}
+
+	selectX(){
+		this.setState({players: ['X', 'O']});
+	}
+
+	selectO(){
+		this.setState({players: ['O', 'X']});
 	}
 
 	render() {
@@ -45,6 +55,8 @@ class Game extends Component {
 					gameMode={this.state.gameMode}
 					gameModeSelectionHandler={this.setGameMode}
 					resetGameState={this.resetGameState}
+					selectX={this.selectX}
+					selectO={this.selectO}
 				/>
 				{
 					this.state.players ?

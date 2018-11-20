@@ -29,9 +29,9 @@ export default class SideTable extends Component {
 		if (!this.props.players){
 			return (
 				<div>
-					<button onClick={() => {this.props.resetGameState()}}>Home</button>
-					<button>X</button>
-					<button>O</button>
+					<button onClick={() => this.props.resetGameState()}>Home</button>
+					<button onClick={() => this.props.selectX()}>X</button>
+					<button onClick={() => this.props.selectO()}>O</button>
 					<span>Select X or O</span>
 				</div>
 			)
@@ -51,7 +51,7 @@ export default class SideTable extends Component {
 
 		return (
 			<div>
-				<button>Home</button>
+				<button onClick={() => this.props.resetGameState()}>Home</button>
 				<button>Reset</button>
 				<span>{message}</span>
 				<span>

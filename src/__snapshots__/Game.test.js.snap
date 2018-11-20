@@ -31,6 +31,8 @@ ShallowWrapper {
               0,
             ]
           }
+          selectO={[Function]}
+          selectX={[Function]}
           turn={0}
           winner={null}
         />,
@@ -54,6 +56,8 @@ ShallowWrapper {
             0,
             0,
           ],
+          "selectO": [Function],
+          "selectX": [Function],
           "turn": 0,
           "winner": null,
         },
@@ -85,6 +89,8 @@ ShallowWrapper {
                 0,
               ]
             }
+            selectO={[Function]}
+            selectX={[Function]}
             turn={0}
             winner={null}
           />,
@@ -108,6 +114,8 @@ ShallowWrapper {
               0,
               0,
             ],
+            "selectO": [Function],
+            "selectX": [Function],
             "turn": 0,
             "winner": null,
           },
