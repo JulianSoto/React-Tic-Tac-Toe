@@ -4,13 +4,6 @@ import SideTable from './SideTable.js';
 
 import Board from './Board';
 
-/*
-const GAME_MODE = {
-	HUMAN_VS_HUMAN: 'HUMAN_VS_HUMAN',
-	HUMAN_VS_COMPUTER: 'HUMAN_VS_COMPUTER'
-};
-*/
-
 const initialState = {
 	turn: 0, 		//turn's value represents player's index
 	players: null, 	//computer's index is always 1
@@ -25,6 +18,13 @@ class Game extends Component {
 	constructor(props){
 		super(props);
 		this.state = initialState;
+		this.setGameMode = this.setGameMode.bind(this);
+	}
+
+	setGameMode(mode){
+		this.setState({
+			gameMode: mode
+		});
 	}
 
 	render() {
@@ -38,6 +38,7 @@ class Game extends Component {
 					players={this.state.players}
 					scoreboard={this.state.scoreboard}
 					gameMode={this.state.gameMode}
+					gameModeSelectionHandler={this.setGameMode}
 				/>
 				{
 					this.state.players ?

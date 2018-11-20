@@ -1,5 +1,6 @@
 //side table
 import React, {Component} from 'react';
+import {HUMAN_VS_HUMAN, HUMAN_VS_COMPUTER} from './globalConstants.js';
 
 export default class SideTable extends Component {
 	constructor(props){
@@ -10,8 +11,16 @@ export default class SideTable extends Component {
 		if (this.props.gameMode === null){
 			return (
 				<div>
-					<button>Human vs human</button>
-					<button>Human vs computer</button>
+					<button
+						onClick={() => this.props.gameModeSelectionHandler(HUMAN_VS_HUMAN)}
+					>
+						Human vs human
+					</button>
+					<button
+						onClick={() => this.props.gameModeSelectionHandler(HUMAN_VS_COMPUTER)}
+					>
+						Human vs computer
+					</button>
 					<span>Choose a game mode</span>
 				</div>
 			)

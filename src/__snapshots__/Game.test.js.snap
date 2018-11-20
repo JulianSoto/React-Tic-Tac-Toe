@@ -21,6 +21,7 @@ ShallowWrapper {
         <SideTable
           className="side-table"
           gameMode={null}
+          gameModeSelectionHandler={[Function]}
           isDraw={false}
           players={null}
           scoreboard={
@@ -44,6 +45,7 @@ ShallowWrapper {
         "props": Object {
           "className": "side-table",
           "gameMode": null,
+          "gameModeSelectionHandler": [Function],
           "isDraw": false,
           "players": null,
           "scoreboard": Array [
@@ -71,6 +73,7 @@ ShallowWrapper {
           <SideTable
             className="side-table"
             gameMode={null}
+            gameModeSelectionHandler={[Function]}
             isDraw={false}
             players={null}
             scoreboard={
@@ -94,6 +97,7 @@ ShallowWrapper {
           "props": Object {
             "className": "side-table",
             "gameMode": null,
+            "gameModeSelectionHandler": [Function],
             "isDraw": false,
             "players": null,
             "scoreboard": Array [
