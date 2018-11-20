@@ -1,6 +1,7 @@
 //side table
 import React, {Component} from 'react';
 import {HUMAN_VS_HUMAN, HUMAN_VS_COMPUTER} from './globalConstants.js';
+import Status from './StatusMessage.js';
 
 export default class SideTable extends Component {
 	constructor(props){
@@ -36,24 +37,18 @@ export default class SideTable extends Component {
 				</div>
 			)
 		}
-		
-		let message;
-
-		if (this.props.winner !== null){
-			message = `${ this.props.players[this.props.winner] } wins`
-		} else if (this.props.isDraw){
-			message = `It's a draw`;
-		}  if (this.props.gameMode === null){
-			message = `Choose a game mode`;
-		} else {
-			message = `${ this.props.players[this.props.turn] } plays`
-		}
 
 		return (
 			<div>
 				<button onClick={() => this.props.resetGameState()}>Home</button>
 				<button>Reset</button>
-				<span>{message}</span>
+				<Status
+					winner={this.props.winner}
+					players={this.props.players}
+					isDraw={this.props.isDraw}
+					gameMode={this.props.gameMode}
+					turn={this.props.turn}
+				/>
 				<span>
 					{`${this.props.scoreboard[0]} - ${this.props.scoreboard[1]}`}
 				</span>
