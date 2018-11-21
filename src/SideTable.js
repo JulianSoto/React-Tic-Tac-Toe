@@ -47,7 +47,7 @@ export default class SideTable extends Component {
 				<button onClick={() => this.props.resetGameState()} className="home">Home</button>
 				{
 					(this.props.winner !== null || this.props.isDraw) ? 
-					<button onClick={this.props.playAgain} class="play-again">Play again</button> : null
+					<button onClick={this.props.playAgain} className="play-again">Play again</button> : null
 				}
 				<Status
 					className="status"
