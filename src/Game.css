@@ -1,4 +1,5 @@
 .game-container {
 	display: flex;
+	width: 350px;
 	grid-template-columns: auto auto;
 }

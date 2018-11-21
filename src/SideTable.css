@@ -1,0 +1,32 @@
+.side-table {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin-left: 50px;
+}
+
+.status {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.home {
+	width: 100%;
+}
+
+.game-mode-option {
+	width: 100%;
+}
+
+.play-again {
+	width: 100%;
+}
+
+.scoreboard {
+	display: block;
+	margin-top: 10px;
+	font-size: 1.5em;
+	color: #444;
+}
