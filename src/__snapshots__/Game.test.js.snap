@@ -18,7 +18,24 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        null,
+        <Board
+          className="board"
+          players={null}
+          squareClickHandler={[Function]}
+          squares={
+            Array [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+            ]
+          }
+        />,
         <SideTable
           className="side-table"
           gameMode={null}
@@ -43,7 +60,30 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      null,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "board",
+          "players": null,
+          "squareClickHandler": [Function],
+          "squares": Array [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -79,7 +119,24 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          null,
+          <Board
+            className="board"
+            players={null}
+            squareClickHandler={[Function]}
+            squares={
+              Array [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+              ]
+            }
+          />,
           <SideTable
             className="side-table"
             gameMode={null}
@@ -104,7 +161,30 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        null,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "board",
+            "players": null,
+            "squareClickHandler": [Function],
+            "squares": Array [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,

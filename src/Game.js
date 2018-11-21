@@ -104,7 +104,7 @@ class Game extends Component {
 			isDraw: initialState.isDraw,
 			gameover: initialState.gameover
 		}, () => {
-			if (this.state.turn === 1) this.AIPlays();
+			if (this.state.turn === 1 && this.state.gameMode === HUMAN_VS_COMPUTER) this.AIPlays();
 		});
 	}
 

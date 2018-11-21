@@ -15,9 +15,9 @@ describe('Game component', () => {
 		expect(wrapper.find('.side-table').exists()).toBe(true);
 	});
 
-	it(`Shouldn't contain a board`, () => {
+	it(`Should contain a board`, () => {
 		const wrapper = shallow(<Game />);
-		expect(wrapper.find('.board').exists()).toBe(false);
+		expect(wrapper.find('.board').exists()).toBe(true);
 	});
 
 	it(`Should contain a board when players is set in state`, () => {
